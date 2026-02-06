@@ -1,7 +1,7 @@
-# Pipeline-Germinativo
+# Pipeline Germinativo
 ## Reset do Drive 
 ### Antes de iniciar o pipeline, usamos esse código para limpar e reogarnizar o Drive.
-'''python
+```python
 from google.colab import drive
 import os
 if os.path.isdir('/content/drive'):
@@ -17,4 +17,4 @@ else:
     os.system('rm -rf /content/drive/*')
 
 drive.mount('/content/drive', force_remount=True)
-'''
+```
